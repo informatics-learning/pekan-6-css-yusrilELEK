@@ -1,0 +1,64 @@
+/* Reset CSS */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container utama */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Kontainer isi */
+.content, .subcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+}
+
+/* Konten tambahan */
+.content2, .content3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 15px;
+}
+
+/* Gaya untuk setiap item */
+.content > div, .content2 > div, .content3 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #ced80e;
+}
+
+/* Warna untuk setiap item */
+.item1 { background-color: #ff6b6b; color: white; }
+.item2 { background-color: #ffca3a; color: black; }
+.item3 { background-color: #8ac926; color: white; }
+.item4 { background-color: #1982c4; color: white; }
+
+/* Responsif */
+@media (max-width: 768px) {
+    .content, .subcontainer {
+        flex-direction: column;
+    }
+}
